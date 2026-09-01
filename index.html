@@ -22,7 +22,8 @@
          padding: 16px;
          display: flex;
       }
-      article{
+
+      article {
          display: flex;
       }
 
@@ -45,8 +46,8 @@
    </Header>
    <main>
       <article>
-         <img src="anime.png" alt="Logo ilustrada com o texto " ANIMES" em destaque com letras roxas estilizadas, sobre um
-            fundo cósmico em tons de roxo e violeta com círculos mágicos, espadas e silhuetas de personagens.">
+         <img src="anime.png" alt="Logo ilustrada com o texto " ANIMES" em destaque com letras roxas estilizadas, sobre
+            um fundo cósmico em tons de roxo e violeta com círculos mágicos, espadas e silhuetas de personagens.">
          <div>
             <h2>Meu primeiro post</h2>
             <p class="artigo-autor">por: Talyson Dias</p>
@@ -57,34 +58,43 @@
          </div>
       </article>
       <article>
-         <img src="anime.png" alt="Logo ilustrada com o texto " ANIMES" em destaque com letras roxas estilizadas, sobre um
-            fundo cósmico em tons de roxo e violeta com círculos mágicos, espadas e silhuetas de personagens.">
+         <img src="anime.png" alt="Logo ilustrada com o texto " ANIMES" em destaque com letras roxas estilizadas, sobre
+            um fundo cósmico em tons de roxo e violeta com círculos mágicos, espadas e silhuetas de personagens.">
          <div>
             <h2>Meu segundo post</h2>
             <p class="artigo-autor">por: Talyson Dias</p>
-            <p>Boas-Vindas ao meu novo blog! Aqui vou compartilhar curiosidades e explicaçoẽs
-               sobre animes </p>
+            <p>Se o primeiro post foi para abrir as portas, o segundo é para cravar os pés: o universo dos animes é um caminho sem volta!
+                ⛩️Seja pela animação impecável, pelas lutas de tirar o fôlego ou por aquelas histórias que fazem a gente chorar igual criança,
+                cada obra marca a nossa vida de um jeito único. </p>
             <button>🦇​<span>0</span></button>
             <button>​🐱​​​<span>0</span></button>
-         </div>
+            <div>
+               <article>
+                  <main>
 
-      </article>
-   </main>
-</body>
-<script>
-   const botoes = document.querySelectorAll("button");
+                     <body>
+                        <script>
+                           const botoes = document.querySelectorAll("button");
 
-   botoes.forEach(function (botao) {
-      botao.addEventListener("click", botaoClicado)
-      function botaoClicado() {
-         console.log("fui clicado");
-         let texto = botao.querySelector("span");
-         texto.textContent++;
+                           botoes.forEach(function (botao) {
 
-      }
-   })
+                             let curtiu = false;
+
+                              botao.addEventListener("click", botaoClicado);
+                              function botaoClicado() {
+                                 console.log("fui clicao");
+                                 let texto = botao.querySelector("span");
+                                 if (curtiu === false){
+                                    texto.textContent++;
+                                    curtiu = true;
+                                 } else{
+                                    texto.textContent--;
+                                    curtiu = false;
+                                 }   
+                                 }
+
+                              })
 
 
-</script>
-
+ </script>
 </html>
