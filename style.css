@@ -1,22 +1,24 @@
-header{
-    background-color: #8132a0;
-    color: #e6e6e6 ;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 16px;
-    border: 5px solid #5f067a;
- }
- main {
-  background-color: #FFFFFF;
-  color: #48025e;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
-  display: flex;
- }
- img{
-  width: 150px;
-  height: 150px;
 
+.feed {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;             
+    max-width: 800px;       
+    margin: 30px auto;     
+    padding: 0 20px;
+ }
+ .post {
+    color: #441b72;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #441b72;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f5fa;
+ }
+ 
+ .post img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 6px;
  }
