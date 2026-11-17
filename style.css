@@ -1,24 +1,53 @@
+header {
+background-color: rgb(170, 111, 212);
 
-.feed {
-    display: flex;
-    flex-direction: column; 
-    gap: 30px;             
-    max-width: 800px;       
-    margin: 30px auto;     
-    padding: 0 20px;
- }
- .post {
-    color: #441b72;
-    display: flex;
-    flex-direction: column; 
-    border: 1px solid #441b72;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f8f5fa;
- }
- 
- .post img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 6px;
- }
+color: rgb(23, 8, 57);
+text-align:center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+border: 5px solid rgb(50, 12, 65);
+}
+
+main{
+background-color: blueviolet;
+color: rgb(255, 255, 255);
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+img{
+width: 150px;
+height: 150px;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
